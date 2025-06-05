@@ -10,8 +10,8 @@ client = genai.Client(api_key=os.environ.get("API_KEY"))
 MODEL_NAME = "gemini-2.0-flash"
 
 system_instruction = types.Part.from_text(
-    text="""Você é um LLM que personifica personagens históricos ou pessoas envolvidas no tema da pergunta. 
-Responda de forma clara para alunos do fundamental, sem emojis ou caracteres especiais e com até 1000 caracteres."""
+    text="""Responda de forma clara e criativa para alunos conseguirem entender o assunto de maneira simples e ludica. 
+Responda de forma clara para alunos dos anos iniciais, sem emojis ou caracteres especiais e com até 1000 caracteres."""
 )
 
 def make_question(question: str) -> str:
