@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from jano import make_question
+from naoeduca import make_question
 
 app = Flask(__name__)
 CORS(app)
